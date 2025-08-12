@@ -44,7 +44,7 @@ This is a **Spring Boot + Thymeleaf** web application for managing products. It 
 ## 🛠️ Run Locally
 
 ```bash
-git clone https://github.com/MasaafKhaoula/-bdcc-spring-enset-mvc.git
+git clone https://github.com/MasaafKhaoula/spring-enset-mvc.git
 cd -bdcc-spring-enset-mvc
 mvn spring-boot:run
 ```
