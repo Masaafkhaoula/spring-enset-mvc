@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout1}">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Product</title>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.3.5/css/bootstrap.min.css}">
+</head>
+<body>
+<div class="container py-4" layout:fragment="content1">
+    <h2 class="mb-4 text-center">➕ Add New Product</h2>
+
+    <form th:action="@{/admin/saveProduct}" method="post" class="card shadow p-4 mx-auto" style="max-width: 600px;">
+        <div class="mb-3">
+            <label for="name" class="form-label">📝 Name</label>
+            <input type="text" class="form-control" id="name" name="name" th:value="${product.name}" placeholder="Enter product name">
+            <small class="text-danger" th:errors="${product.name}"></small>
+        </div>
+
+        <div class="mb-3">
+            <label for="price" class="form-label">💰 Price</label>
+            <input type="number" class="form-control" id="price" name="price" th:value="${product.price}" placeholder="Enter price">
+            <small class="text-danger" th:errors="${product.price}"></small>
+        </div>
+
+        <div class="mb-3">
+            <label for="quantity" class="form-label">📦 Quantity</label>
+            <input type="number" class="form-control" id="quantity" name="quantity" th:value="${product.quantity}" placeholder="Enter quantity">
+            <small class="text-danger" th:errors="${product.quantity}"></small>
+        </div>
+
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">✅ Save Product</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
+

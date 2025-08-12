@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout1}">
+<head>
+    <meta charset="UTF-8">
+    <title>Access Denied</title>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.3.5/css/bootstrap.min.css}">
+</head>
+<body>
+<div class="container text-center py-5" layout:fragment="content1" style="min-height: 60vh;">
+    <h1 class="display-4 text-danger">🚫 Access Denied</h1>
+    <p class="lead">Sorry, you are not authorized to view this page.</p>
+    <a href="/" class="btn btn-outline-primary mt-3">🔙 Back to Home</a>
+</div>
+</body>
+</html>
+
