@@ -78,8 +78,5 @@ src
 │       └── notAuthorized.html
 ```
 
-## 📜 License
-
-Free for educational use.
-
-
+## Author
+Masaaf Khaoula
